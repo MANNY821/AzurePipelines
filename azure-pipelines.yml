@@ -2,6 +2,7 @@
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
+# No hosted parallelism has been purchased or granted. 
 
 trigger:
 - main
@@ -20,4 +21,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-No hosted parallelism has been purchased or granted. 
